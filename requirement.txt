@@ -1,0 +1,14 @@
+huggingface-hub
+uvicorn
+starlette
+fastapi
+pydantic
+pydantic_core
+llama-cpp-python
+langchain-core
+langchain
+langchain-community
+duckduckgo-search
+wikipedia
+faiss-gpu
+PyPDF2
