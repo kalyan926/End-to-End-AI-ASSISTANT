@@ -49,12 +49,13 @@ The synthetic dataset was used to fine-tune the LLaMA 3.2 model. Fine-tuning bro
 
 **Prompt Before finetuning:**
 "Answer the following questions as best you can. You have access to the following tools: 
+
 [Tool(name='Wikipedia', description='Use for in-depth topic exploration with detailed, user-curated articles and references.', func=<bound method WikipediaAPIWrapper.run of WikipediaAPIWrapper(wiki_client=<module 'wikipedia' from '/usr/local/lib/python3.10/dist-packages/wikipedia/__init__.py'>, top_k_results=3, lang='en', load_all_available_meta=False, doc_content_chars_max=4000)>), 
 Tool(name='search', description=' Use for general topic searches, aggregating results from multiple sources. Simply input a search query to get started.', func=<bound method BaseTool.run of DuckDuckGoSearchRun(api_wrapper=DuckDuckGoSearchAPIWrapper(region='wt-wt', safesearch='moderate', time='y', max_results=5, backend='api', source='text'))>),
 StructuredTool(name='retriever', description='This function retrieves information stored in the database related to LangChain. It takes a string parameter as input.', args_schema=<class 'langchain_core.utils.pydantic.retriever'>, func=<function retriever at 0x7abfc1345240>)]
 
  Use the following format:
- Question: How does LangChain handle entity extraction?
+Question: How does LangChain handle entity extraction?
 Thought: A query about LangChain's ability to extract entities from text.
 Action: retriever
 Action Input: LangChain entity extraction
